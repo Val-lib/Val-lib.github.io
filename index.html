@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaji Research Group - 九州大学 加地研究室</title>
+    <!-- Tailwind CSSでモダンなデザインを実装 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* カスタムアニメーション */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in { animation: fadeIn 0.8s ease-out; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- ナビゲーションバー -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="#" class="flex items-center">
+                    <img src="lab-logo.png" alt="Lab Logo" class="h-12 w-12 mr-3">
+                    <span class="text-xl font-semibold text-gray-800">加地研究室</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#research" class="text-gray-600 hover:text-blue-600 transition">研究内容</a>
+                    <a href="#members" class="text-gray-600 hover:text-blue-600 transition">メンバー</a>
+                    <a href="#publications" class="text-gray-600 hover:text-blue-600 transition">業績</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition">アクセス</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ヘッダーセクション -->
+    <header class="pt-24 pb-12 bg-gradient-to-r from-blue-800 to-cyan-600">
+        <div class="max-w-7xl mx-auto px-4 fade-in">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                    生命分析化学の新領域を拓く
+                </h1>
+                <p class="text-xl text-white opacity-90 mb-8">
+                    マイクロ・ナノテクノロジーを駆使した次世代バイオ分析技術の開発
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <!-- 研究ハイライトセクション -->
+        <section id="research" class="mb-20 fade-in">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 border-l-4 border-blue-600 pl-4">
+                研究ハイライト
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <h3 class="text-xl font-semibold mb-4">単一細胞解析技術</h3>
+                    <p class="text-gray-600">マイクロ流体デバイスを用いた非破壊細胞診断法の開発[1][5]</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <h3 class="text-xl font-semibold mb-4">人工細胞工学</h3>
+                    <p class="text-gray-600">機能性エクソソームの作製と医療応用[1][6]</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <h3 class="text-xl font-semibold mb-4">腸内環境分析</h3>
+                    <p class="text-gray-600">3Dマイクロ腸モデルの構築[1][5]</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ニュースセクション -->
+        <section id="news" class="mb-20 fade-in">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 border-l-4 border-blue-600 pl-4">
+                最新情報
+            </h2>
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-2">
+                        <span class="text-blue-600 font-medium mr-4">2025.04.16</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">受賞</span>
+                    </div>
+                    <p class="text-gray-800">梁逸偉助教が日本分析化学会若手賞を受賞</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <span class="text-blue-600 font-medium">2025.03.28</span>
+                    <p class="text-gray-800">第5回Baba Conferenceを主催（参加者250名）</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- クイックリンクセクション -->
+        <section class="mb-20 fade-in">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-blue-50 p-8 rounded-xl">
+                    <h3 class="text-2xl font-semibold mb-4">新規メンバー募集</h3>
+                    <p class="mb-6">パイオニア精神を持った大学院生・研究員を歓迎します</p>
+                    <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+                        詳細を見る
+                    </a>
+                </div>
+                <div class="bg-gray-100 p-8 rounded-xl">
+                    <h3 class="text-2xl font-semibold mb-4">共同研究のご案内</h3>
+                    <p class="mb-6">産業界との連携を積極的に推進しています</p>
+                    <a href="#contact" class="bg-gray-800 text-white px-6 py-2 rounded-lg hover:bg-gray-900 transition">
+                        お問い合わせ
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">アクセス</h4>
+                    <p class="text-gray-400">
+                        〒819-0395<br>
+                        福岡市西区元岡744<br>
+                        九州大学 西3号館4F
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">連絡先</h4>
+                    <p class="text-gray-400">
+                        TEL: 092-802-2886<br>
+                        Email: kaji@cstf.kyushu-u.ac.jp
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">ソーシャル</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">Twitter</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">YouTube</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Kaji Research Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
